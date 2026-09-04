@@ -1960,6 +1960,22 @@ html { scroll-behavior:smooth; }
 .glass-card,.education-item,.contact-box { transition:transform .45s var(--ease-out-expo),border-color .35s ease,box-shadow .45s ease,background .35s ease; } .glass-card:hover,.education-item:hover { transform:translateY(-9px); }
 .tech-badge { transition:transform .25s var(--ease-out-expo),background .25s ease,border-color .25s ease; } .tech-badge:hover { transform:translateY(-4px) scale(1.04); }
 @media (prefers-reduced-motion:reduce) { .motion-ready .hero-text .status,.motion-ready .hero-text h1,.motion-ready .hero-text .hero-description,.motion-ready .hero-text .buttons,.motion-ready .profile-card,.motion-ready .service { animation:none; opacity:1; filter:none; } .figma-reveal { opacity:1; transform:none; filter:none; transition:none; } .avatar-drop { opacity:1; transform:none; } }
+
+/* Mobile gets its own calm layout instead of shrinking the desktop scene. */
+@media (max-width:760px) {
+    body { background:#030811; }
+    #navbar { width:92%; top:10px; height:56px; } .logo { font-size:14px; white-space:nowrap; } .nav-contact { padding:9px 12px; font-size:11px; }
+    .hero { min-height:auto; padding:102px 7% 135px; overflow:hidden; } .hero::before { background-size:62px 62px; opacity:.42; }
+    .hero-container { display:flex; flex-direction:column; gap:27px; text-align:left; } .hero-text { width:100%; padding-top:0; transform:none !important; opacity:1 !important; }
+    .status { margin-bottom:16px; font-size:9px; } .hero h1 { max-width:345px; font-size:clamp(41px,12vw,54px); line-height:1.02; margin-bottom:14px; } .hero-description { max-width:340px; font-size:13px; } .buttons { margin-top:21px; } .btn { padding:12px 16px; font-size:12px; }
+    .profile-card { width:250px; min-height:320px; margin:0 auto; padding:22px; transform:none !important; opacity:1 !important; filter:none !important; } .profile-card::after { width:220px; height:290px; }
+    .profile-circle { width:138px; height:138px; margin-bottom:6px; } .profile-card h2 { font-size:17px; } .profile-card p { font-size:11px; } .profile-line { margin-top:11px; }
+    .avatar-drop { opacity:1 !important; transform:none !important; animation:none !important; } .profile-avatar { transform:none !important; }
+    .reference-beam { width:95vw; left:-40vw; top:18%; opacity:.68; transform:rotate(13deg) !important; } .reference-beam.purple { width:92vw; right:-43vw; top:74%; opacity:.66; transform:rotate(-11deg) !important; }
+    .mountains { height:128px; transform:none !important; } .mountains::before,.mountains::after { height:148px; }
+    .crossover { height:72px; margin-top:-34px; } .crossover::before { top:17px; height:74px; }
+    .about-reference-copy { font-size:13px; } .service-rail { display:none; }
+}
 </style>
 
 </head>
@@ -2750,17 +2766,17 @@ html { scroll-behavior:smooth; }
             <!-- Replace # with your LinkedIn URL -->
 
             <a
-                href="#"
+                href="https://www.instagram.com/garaxx_ahemad?igsi=MTkzZDVxMTNhODB3Zw=="
                 target="_blank"
                 class="btn btn-secondary"
             >
 
-                LinkedIn ↗
+                Ig↗
 
             </a>
 
 
-            <!-- GITHUB -->
+            <!-- YT -->
 
             <!-- Replace # with your GitHub URL -->
 
